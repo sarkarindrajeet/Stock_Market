@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock_Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Source+Sans+Pro&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/style.css"%}'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/static/js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="Main_Section">
+        <div class="SubMain_Section">
+            <div class="column1">
+                <div class="slider1">
+                    <div class="row1">
+                        <ul class="unorderlist1">
+                            <li class="list1"><a class="text1" href="#">Snapshot</a></li>
+                            <li class="list1"><a class="text1" href="#">Key Ratio</a></li>
+                            <li class="list1"><a class="text1" href="#">Peers</a></li>
+                            <li class="list1"><a class="text1" href="#">Financial</a></li>
+                            <li class="list1"><a class="text1" href="#">Ownership</a></li>
+                            <li class="list1"><a class="text1" href="#">News</a></li>
+                            <li class="list1"><a class="text1" href="#">Events</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="row2">
+                        <div class="pro_only1">
+                            <img class="lockimage" src="/static/images/icons8-lock-32.png" alt="">
+                            <p class="protext">Pro Only</p>
+                        </div>
+                        <p class="Headingof">RATING</p>
+                        <div class="subrow">
+                            <div class="div_rating">
+                                <img class="Rating" src="/static/images/icons8-star-48.png" alt="">
+                                <img class="Rating" src="/static/images/icons8-star-48.png" alt="">
+                                <img class="Rating" src="/static/images/icons8-star-48.png" alt="">
+                                <img class="Rating" src="/static/images/icons8-star-48.png" alt="">
+                            </div>
+                        </div>
+                        <p class="Headingof">RECOMMENDATION</p>
+                        <div class="subrow">
+                            <p class="subtext"> Strong Buy</p>
+                        </div>
+                        <p class="Headingof">ACCUMULATION RANGE</p>
+                        <div class="subrow">
+                            <p class="subtext">Rs 1400 - Rs 1450 </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="column2">
+                <p class="Essentials">Essentials</p>
+                <div class="subcolumn">
+                    <div class="col">
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">ISIN</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">ADV456F23G8JK</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Profit After Tax</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">123456 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">P/B</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">3.33</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Intrinsic Value</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">95,289.90 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Sub-sector</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">Auto Parts</p>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Face Value</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">983456 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Promotor Holding</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">23%</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Market Capitalisation</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">1,00,289.90 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Dividend Yield</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">95,289.90 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Category</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">PreIPO</p>
+                        </div>
+
+
+                    </div>
+                    <div class="col">
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Total Shares</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">98,3456 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">EPS</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">Rs 42.09</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Enterprise Value</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">1,00,289.90 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Earnings Yield</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">95,289.90 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">CashFlow...Operations</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">1,00,289 cr</p>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Total Income</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">1236.5</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">P/E</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">48.9</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Book Value</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">1,00,289.90 cr</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Sector</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">Real Estate</p>
+                        </div>
+                        <div class="colcontent">
+                            <div class="innercol">
+                                <p class="textcol">Cash Flow...Financing</p>
+                                <img class="imgs" src="/static/images/icons8-info-26.png" alt="">
+                            </div>
+                            <p class="contents">1,00,289 cr</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <p class="Growth">Growth</p>
+                <div class="growthdiv">
+                    <div class="growthcol">
+                        <div class="row6">
+                            <div class="compounded">
+                                <p class="Growth1">Compounded Sales Growth</p>
+                                <div class="pro_only2">
+                                    <img class="lockimage" src="/static/images/icons8-lock-32.png" alt="">
+                                    <p class="protext">Pro Only</p>
+                                </div>
+                            </div>
+                            <div class="rtx">
+                                <div class="contentx">
+                                    <p class="per">45%</p>
+                                    <p class="years">10 Years</p>
+
+                                </div>
+                                <div class="contentx">
+                                    <p class="per">19%</p>
+                                    <p class="years">5 Years</p>
+
+                                </div>
+                                <div class="contentx1">
+                                    <div class="subrow">
+                                        <p class="subtext">16%</p>
+                                        <p class="subtext">5%</p>
+
+                                    </div>
+                                    <div class="subrow2">
+                                        <p class="years1">3 Years</p>
+                                        <p class="years2">TTM</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row6">
+                            <div class="compounded">
+                                <p class="Growth1">Compounded Sales Growth</p>
+                                <div class="pro_only2">
+                                    <img class="lockimage" src="/static/images/icons8-lock-32.png" alt="">
+                                    <p class="protext">Pro Only</p>
+                                </div>
+                            </div>
+                            <div class="rtx">
+                                <div class="contentx">
+                                    <p class="per">45%</p>
+                                    <p class="years">10 Years</p>
+
+                                </div>
+                                <div class="contentx">
+                                    <p class="per">19%</p>
+                                    <p class="years">5 Years</p>
+
+                                </div>
+                                <div class="contentx1">
+                                    <div class="subrow">
+                                        <p class="subtext">16%</p>
+                                        <p class="subtext">5%</p>
+
+                                    </div>
+                                    <div class="subrow2">
+                                        <p class="years1">3 Years</p>
+                                        <p class="years2">TTM</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="growthcol">
+                        <div class="row6">
+                            <div class="compounded">
+                                <p class="Growth1">Compounded Sales Growth</p>
+                                <div class="pro_only2">
+                                    <img class="lockimage" src="/static/images/icons8-lock-32.png" alt="">
+                                    <p class="protext">Pro Only</p>
+                                </div>
+                            </div>
+                            <div class="rtx">
+                                <div class="contentx">
+                                    <p class="per">45%</p>
+                                    <p class="years">10 Years</p>
+
+                                </div>
+                                <div class="contentx">
+                                    <p class="per">19%</p>
+                                    <p class="years">5 Years</p>
+
+                                </div>
+                                <div class="contentx1">
+                                    <div class="subrow">
+                                        <p class="subtext">16%</p>
+                                        <p class="subtext">5%</p>
+
+                                    </div>
+                                    <div class="subrow2">
+                                        <p class="years1">3 Years</p>
+                                        <p class="years2">TTM</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row6">
+                            <div class="compounded">
+                                <p class="Growth1">Compounded Sales Growth</p>
+                                <div class="pro_only2">
+                                    <img class="lockimage" src="/static/images/icons8-lock-32.png" alt="">
+                                    <p class="protext">Pro Only</p>
+                                </div>
+                            </div>
+                            <div class="rtx">
+                                <div class="contentx">
+                                    <p class="per">45%</p>
+                                    <p class="years">10 Years</p>
+
+                                </div>
+                                <div class="contentx">
+                                    <p class="per">19%</p>
+                                    <p class="years">5 Years</p>
+
+                                </div>
+                                <div class="contentx1">
+                                    <div class="subrow">
+                                        <p class="subtext">16%</p>
+                                        <p class="subtext">5%</p>
+
+                                    </div>
+                                    <div class="subrow2">
+                                        <p class="years1">3 Years</p>
+                                        <p class="years2">TTM</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="about">
+                    <p class="abouttext">About</p>
+                    <p class="aboutpara">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. <br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+                    </p>
+                </div>
+                <p class="Growth">IPO Details</p>
+                <div class="flex">
+                    <div class="open">
+                        <div class="month">
+                            <p class="date">3</p>
+                            <p class="feb">FEB</p>
+                        </div>
+                        <div class="dateyear">
+                            <p class="opendate">Open Date</p>
+                            <p class="timedate"> 24 Dec 2019 at 09:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="open">
+                        <div class="month2">
+                            <p class="date">24</p>
+                            <p class="feb">DEC</p>
+                        </div>
+                        <div class="dateyear">
+                            <p class="opendate">Closed Date</p>
+                            <p class="timedate"> 8 Dec 2020 at 098:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="open">
+                        <div class="month3">
+                            <p class="date">3</p>
+                            <p class="feb">JAN</p>
+                        </div>
+                        <div class="dateyear">
+                            <p class="opendate">Listing Date</p>
+                            <p class="timedate"> 24 Dec 2019 at 10:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="outerdiv">
+                    <div class="flex">
+                        <div class="sale">
+                            <p class="textcol1">Offer for Sale</p>
+                            <p class="contents1">Rs 234.23 cr</p>
+                        </div>
+                        <div class="sale">
+                            <p class="textcol1">Fresh Issue</p>
+                            <p class="contents1">Rs 567.23 cr</p>
+                        </div>
+                        <div class="sale">
+                            <p class="textcol1">Total IPO Size</p>
+                            <p class="contents1">Rs 801.46 cr</p>
+                        </div>
+                        <div class="sale">
+                            <p class="textcol1">Price Brand</p>
+                            <p class="contents1">Rs 1,400 - 1,420</p>
+                        </div>
+                        <div class="sale">
+                            <p class="textcol1">Price Brand</p>
+                            <p class="contents1">Rs 234.23 cr</p>
+                        </div>
+                        <div class="sale">
+                            <p class="textcol1">Min. Order Qty</p>
+                            <p class="contents1">24 (Integer #)</p>
+                        </div>
+                        <div class="sale1">
+                            <p class="textcol1">Grey Market Premium</p>
+                            <p class="contents1">Rs 45 - Rs 60</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="hr"></div>
+                    <div class="subs">
+                        <div class="totalsub">
+                            <p class="textsub">Total Subscrition</p>
+                            <p class="totalnum">(0.50x)</p>
+                        </div>
+                        <div class="retail">
+                            <p class="retailtext">Retail</p>
+                            <p class="retailnum">23.4x</p>
+                        </div>
+                        <div class="retail">
+                            <p class="retailtext">QIB</p>
+                            <p class="retailnum">----</p>
+                        </div>
+                        <div class="retail">
+                            <p class="retailtext">Non - Instutional</p>
+                            <p class="retailnum">----</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="Growth">Funding</p>
+                <div class="flex1">
+                    <div class="drt">
+                        <div class="stage">
+                            <p class="textstage">Stage</p>
+                            <p class="maturity">Maturity Stage</p>
+                        </div>
+                        <div class="stage">
+                            <p class="textstage">Looking For</p>
+                            <p class="maturity">Series - A</p>
+                        </div>
+                    </div>
+                    <div class="drt1">
+                        <div class="funding">
+                            <p class="fundingtext">Funding Round</p>
+                            <p class="series">Series - A</p>
+                            <p class="series">Series - B</p>
+                            <p class="series">Series - C</p>
+                            <p class="series">Series - E</p>
+                        </div>
+                        <div class="funding">
+                            <p class="fundingtext">Date Investment</p>
+                            <p class="series">21 Oct 2019</p>
+                            <p class="series">11 Jun 2018</p>
+                            <p class="series">20 Nov 2017</p>
+                            <p class="series">12 Oct 2016</p>
+                        </div>
+                        <div class="funding">
+                            <p class="fundingtext">Funded By</p>
+                            <p class="series">ABC Company</p>
+                            <p class="series">XYZ Company</p>
+                            <p class="series">ABC Company</p>
+                            <p class="series">XYZ Company</p>
+                        </div>
+                        <div class="funding">
+                            <p class="fundingtext">Fund Name</p>
+                            <p class="series">A One</p>
+                            <p class="series">X Two</p>
+                            <p class="series">A Three</p>
+                            <p class="series">X Four</p>
+                        </div>
+                        <div class="funding">
+                            <p class="fundingtext">Funding Amount</p>
+                            <p class="series">5 Million $</p>
+                            <p class="series">4 Million $</p>
+                            <p class="series">3 Million $</p>
+                            <p class="series">2 Million $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="addbutn">
+                    <div class="rowbtn">
+                        <a href="#" class="addlink">+ ADD ROW</a>
+                    </div>
+                </div>
+                <p class="Growth">Merger & Acquistions</p>
+                <div class="flex">
+                    <div class="3box">
+                        <p class="merger">Merger</p>
+                        <ul class="ulrt">
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="3box">
+                        <p class="merger">Acquistions</p>
+                        <ul class="ulrt">
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="3box">
+                        <p class="merger">Investment</p>
+                        <ul class="ulrt">
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="bgh">
+                        <p class="merger1">Subsidiaries</p>
+
+                        <div class="3box">
+
+                            <ul class="ulrt">
+                                <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                </li>
+                                <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                </li>
+                                <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bgh">
+                        <p class="merger1">Business Model</p>
+                        <div class="3box">
+
+                            <ul class="ulrt">
+                                <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                </li>
+                                <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                </li>
+                                <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="rtx1">
+                    <p class="merger1">Product & Services</p>
+                    <div class="flex">
+                        <div class="brt1">
+                            <div class="3box">
+
+                                <ul class="ulrt">
+                                    <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </li>
+                                    <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </li>
+                                    <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="3box">
+                                <p class="merger">Assets</p>
+                                <ul class="ulrt">
+                                    <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </li>
+                                    <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </li>
+                                    <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="brt1">
+                            <p class="merger">Product % of Total Revenue</p>
+                            <div class="chart">
+                                <canvas id="mycanvas" width="256" height="256"> </canvas>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="Growth">Industry Overview</p>
+                <div class="flex">
+                    <div class="3box">
+                        <p class="merger">Industry Statistics</p>
+                        <ul class="ulrt">
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="3box">
+                        <p class="merger">Future Prospects</p>
+                        <ul class="ulrt">
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="3box">
+                        <p class="merger">Government Initiatives</p>
+                        <ul class="ulrt">
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                            <li class="list">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="column3">
+                <div class="slider1">
+                    <div class="row4">
+                        <div class="botheading">
+                            <p class="heading1">HDFC Bank Ltd.</p>
+                            <img src="/static/images/icons8-bookmark-32.png" alt="" class="icimage">
+                        </div>
+                        <div class="botitems">
+                            <h3 class="head3">1,890.45</h3>
+                            <img src="/static/images/icons8-up-arrow-64.png" alt="" class="uprightarrow">
+                            <p class="textgrren">46.4 (+3%)</p>
+                            <div class="placeorder"><a href="#" class="placebutton">PALCE ORDER</a></div>
+                        </div>
+                        <hr>
+                        <div class="Rofr">
+                            <p class="rofrRequired">ROFR Required</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="notext">No</p>
+                        </div>
+                        <p class="depository">Availavle in Depository</p>
+                        <div class="divbox">
+                            <div class="box1">
+                                <img src="/static/images/icons8-rectangular-24.png" alt="" class="icons">
+                                <p class="rtr">CDSL</p>
+                            </div>
+                            <div class="box1">
+                                <img src="/static/images/icons8-rectangular-24.png" alt="" class="icons">
+                                <p class="rtr">NSDL</p>
+                            </div>
+                        </div>
+                        <p class="depository">Availavle for Investment</p>
+                        <div class="divbox">
+                            <div class="box1">
+                                <img src="/static/images/icons8-rectangular-24.png" alt="" class="icons">
+                                <p class="rtr">Primary</p>
+                            </div>
+                            <div class="box1">
+                                <img src="/static/images/icons8-rectangular-24.png" alt="" class="icons">
+                                <p class="rtr">Secondary</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rows5">
+                        <p class="investment">Investment Checklist</p>
+                        <div class="checklistbox">
+                            <div class="colchecklist">
+                                <div class="row5">
+                                    <img src="/static/images/icons8-management-50.png" alt="" class="jgh">
+                                    <p class="p1">Management</p>
+                                    <p class="p2">Trustworthy</p>
+                                </div>
+                                <div class="row5">
+                                    <img src="/static/images/icons8-profitability-60.png" alt="" class="jgh">
+                                    <p class="p1">Profitability</p>
+                                    <p class="p2">Outstanding</p>
+                                </div>
+                                <div class="row5">
+                                    <img src="/static/images/icons8-personal-growth-50.png" alt="" class="jgh">
+                                    <p class="p1">Growth</p>
+                                    <p class="p2">Meet Expectations</p>
+                                </div>
+                                <div class="row5">
+                                    <img src="/static/images/icons8-purposeful-woman-50.png" alt="" class="jgh">
+                                    <p class="p1">Business Type</p>
+                                    <p class="p2">Fairly Valued</p>
+                                </div>
+                            </div>
+                            <div class="colchecklist">
+                                <div class="row5">
+                                    <img src="/static/images/icons8-estimates-50.png" alt="" class="jgh">
+                                    <p class="p1">Accounting Practice</p>
+                                    <p class="p2">Clean</p>
+                                </div>
+                                <div class="row5">
+                                    <img src="/static/images/icons8-financial-success-50.png" alt="" class="jgh">
+                                    <p class="p1">Solvency</p>
+                                    <p class="p2">Exceed Expectations</p>
+                                </div>
+                                <div class="row5">
+                                    <img src="/static/images/icons8-scales-50.png" alt="" class="jgh">
+                                    <p class="p1">Valuation</p>
+                                    <p class="p2">Undervalued</p>
+                                </div>
+                                <div class="row5">
+                                    <img src="/static/images/icons8-management-50.png" alt="" class="jgh">
+                                    <p class="p1">Business Type</p>
+                                    <p class="p2">Fairly Valued</p>
+                                </div>
+     
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
